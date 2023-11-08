@@ -20,16 +20,4 @@ description:String
 
 const Category = new mongoose.model("category",schema);
 
-const addData = async () =>{
-     const Data = new Category({
-         name:"Mongo",
-         description:"One of the most powerful Database Systems in the world which uses Documents"
-     })
-
-    const addData = await Data.save();
-}
-
-
-addData();
-
 module.exports = Category;
